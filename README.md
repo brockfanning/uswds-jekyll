@@ -335,7 +335,9 @@ You can add DAP to your site by uncommenting the `dap_agency` line and, if need 
 ### Last modified date
 
 You can show the last date a page was last modified by uncommenting this line from the `footer.yml` data file.
-This will add the date right before the footer component and uses the `last-modified.html` include.
+This will add the date right before the footer component.
+
+NOTE: You will also need to install the [jekyll-last-modified-at](https://github.com/gjtorikian/jekyll-last-modified-at) plugin. Be aware that this will prevent you from deploying with GitHub Pages' automated builds, since jekyll-last-modified-at is not officially approved by GitHub Pages.
 
 ```yml
 # Used to show the "Last updated" date and time;

@@ -1,7 +1,7 @@
 {% if footer %}
 <footer class="usa-footer usa-footer-big" role="contentinfo">
 
-  {% if footer.last_updated %}
+  {% if footer.last_updated and page.last_modified_at %}
     <div class="usa-grid">
       <div class="usa-width-one-whole">
         <p>Last updated: {{ page.last_modified_at | date: '%B %d, %Y at %I:%M %p' }}</p>
